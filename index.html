@@ -4,87 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandis&Co</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div class="header">Sandis&Co</div>
-
-    <div class="heading-container">
-        <div class="heading-container__heading">
-            <img src="/img/tools.png" alt="Heading background picture">
-            <h1>Heading</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Nulla lacinia condimentum
-                justo tincidunt vulputate. Aenean volutpat
-                at felis ut aliquam.
-            </p>
+    <div class="nav">
+        <p class="logo">Sandis&Co</p>
+        <ul class="nav__btns">
+            <a href="./index.html"><li class="btn active">Home</li></a>
+            <a href="./prices.html"><li class="btn">Cenas</li></a>
+            <a href="./contact.html"><li class="btn">Kontakti</li></a>
+        </ul>
+        <i class="burger fa fa-bars"></i>
+        <i class="cross fa fa-times"></i>
+    </div>
+    <div class="hero">
+        <div class="hero__content">
+            <div class="first">
+                <h1>Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nulla lacinia condimentum
+                    justo tincidunt vulputate. Aenean volutpat
+                    at felis ut aliquam.
+                </p>
+            </div>
+            <div class="second">
+                <h1>Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Nulla lacinia condimentum
+                    justo tincidunt vulputate. Aenean volutpat
+                    at felis ut aliquam.
+                </p>
+            </div>
         </div>
     </div>
-
-    <div class="cards-container">
-        <div class="cards">
-            <div class="cards__card">
-                <img src="/img/window.svg" alt="Window">
-                <p>Mazgājam logus or whatever</p>
-            </div>
-            <div class="cards__card">
-                <img src="/img/floor.svg" alt="Floor">
-                <p>Uzkopjam telpas pēc pasākumiem vai klubus, whatever</p>
-            </div>
-            <div class="cards__card">
-                <img src="/img/cafe.svg" alt="Cafe">
-                <p>Uzkopjam ēdnīcas, restorānus un visu to ko Jūs tur varētu uzkopt karoče</p>
+    <div class="articles">
+            <div class="article">
+            <img src="./img/gloves.jpg" alt="Article image">
+            <div class="text">
+                <h1>Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nulla
+                    lacinia condimentum justo
+                    tincidunt vulputate. Aenean
+                    volutpatat felis ut aliquam. 
+                </p>
             </div>
         </div>
-    </div>
-
-        <div class="articles">
-            <div class="odd">
-                <img src="/img/image.jpg" alt="Article image">
-                <div class="odd__text">
-                    <h1>Heading</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Nulla
-                        lacinia condimentum justo
-                        tincidunt vulputate. Aenean
-                        volutpatat felis ut aliquam. 
-                    </p>
-                </div>
+            <div class="article">
+            <img src="./img/hotel.jpg" alt="Article image">
+            <div class="text">
+                <h1>Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nulla
+                    lacinia condimentum justo
+                    tincidunt vulputate. Aenean
+                    volutpatat felis ut aliquam. 
+                </p>
             </div>
-            <div class="even">
-                <img src="/img/image.jpg" alt="Article image">
-                <div class="even__text">
-                    <h1>Heading</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Nulla
-                        lacinia condimentum justo
-                        tincidunt vulputate. Aenean
-                        volutpatat felis ut aliquam. 
-                    </p>
-                </div>
+        </div>
+            <div class="article">
+            <img src="./img/kitchen.jpg" alt="Article image">
+            <div class="text">
+                <h1>Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nulla
+                    lacinia condimentum justo
+                    tincidunt vulputate. Aenean
+                    volutpatat felis ut aliquam. 
+                </p>
+            </div>
+        </div>
+            <div class="article">
+            <img src="./img/image.jpg" alt="Article image">
+            <div class="text">
+                <h1>Heading</h1>
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Nulla
+                    lacinia condimentum justo
+                    tincidunt vulputate. Aenean
+                    volutpatat felis ut aliquam. 
+                </p>
             </div>
         </div>
     </div>
 
     <div class="footer-container">
         <div class="footer">
-            <div class="footer__address">
-                <img src="/img/marker.svg" alt="marker">
-                <p>Viestura iela 69-69, Jēkabpils, Latvija</p>
-            </div>
-            <div class="footer__contacts">
-                <div class="footer__company">Sandis&Co</div>
+            <p class="footer__logo">Sandis&Co</p>
+            <div class="footer__contacts"> 
+                <div class="footer__address">
+                    <i class="fa fa-map-pin"></i>
+                    <p>Viestura iela 69-69, Jēkabpils, Latvija</p>
+                </div>
                 <div class="footer__phone">
-                    <img src="/img/phone.svg" alt="phone">
-                    <p>26969696</p>
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:+37126969696"><p>+ 371 26969696</p></a>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script src="./js/app.js"></script>
 </html>
