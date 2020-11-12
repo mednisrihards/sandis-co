@@ -8,9 +8,11 @@ const cross = document.querySelector('.cross');
 const hero = document.querySelector('.hero');
 const windowHeight = window.innerHeight;
 
-gsap.from(hero, {opacity: 0, duration: 3});
-gsap.from(heading2, {opacity: 0, duration: .9, delay: 1, y: -150});
-gsap.from(heading1, {opacity: 0, duration: .9, delay: 1, y: -150});
+function allLoaded(){
+
+gsap.from(hero, {opacity: 0, duration: 1});
+gsap.from(heading2, {opacity: 0, duration: .9, delay: .7, y: -150});
+gsap.from(heading1, {opacity: 0, duration: .9, delay: .7, y: -150});
 // gsap.from(navBar, {opacity: 0, duration: .9, delay: 0.5, y: -150});
 
 burger.addEventListener('click', () => {
@@ -61,3 +63,17 @@ cross.addEventListener('click', () => {
     init();
     checkPosition();
   })();
+};
+
+var queue = new createjs.LoadQueue(false);
+
+queue.on('complete', event => {
+  document.querySelector('body').style.scrollBehavior = 'none';
+
+    gsap.to(document.querySelector('.lds-ring'), {opacity: 0, duration: .2});
+    gsap.to(document.querySelector('body'), {display: 'block', duration: .2});
+    gsap.to(document.querySelector('.overlay'), {transformOrigin: 'top', scaleY: 0, duration: .2, delay: .5});
+    allLoaded();
+});
+
+queue.loadFile('http://165.22.17.31/RihardsMednisCom/cleaning-services/img/hero.jpg');
