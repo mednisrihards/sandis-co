@@ -10,7 +10,7 @@ const windowHeight = window.innerHeight;
 
 function allLoaded(){
 
-gsap.from(hero, {opacity: 0, duration: 1});
+gsap.from(hero, {opacity: 0, duration: 1, delay: 1.3});
 gsap.from(heading2, {opacity: 0, duration: .9, delay: .7, y: -150});
 gsap.from(heading1, {opacity: 0, duration: .9, delay: .7, y: -150});
 // gsap.from(navBar, {opacity: 0, duration: .9, delay: 0.5, y: -150});
