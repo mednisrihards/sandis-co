@@ -1,1 +1,10 @@
-‘{}’
+{
+    "name": "sosa/sandis-co",
+    "authors": [
+        {
+            "name": "Rihards Mednis",
+            "email": "mednisrihards@gmail.com"
+        }
+    ],
+    "require": {}
+}
